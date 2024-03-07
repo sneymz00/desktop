@@ -1,0 +1,61 @@
+#include <unistd.h>
+
+char    ft_col(char *raw)
+{
+    char **arr;
+    int     i;
+    int     j;
+    int     k;
+
+    **arr = malloc(2*sizeof(char));
+    arr[0][k];
+    arr[1][k];
+    i = 0;
+    if (raw[i] == '\0') 
+    {
+        write(1, "Error", 5);
+        return (0);
+    }
+    j = ft_counter(raw);
+    if (i <= j)
+    {
+        k = 0;
+        while (raw[i] != 0)
+        {
+            arr[0][k] = raw[i];
+            i++;
+            k++;
+        }
+    }
+    else
+    {
+        k = 0;
+        while (raw[i] != 0)
+            arr[1][k] = raw[i];
+            i++;
+            k++;
+    }
+    return (arr)
+}
+
+int ft_counter(char *c)
+{
+    int i;
+
+    i = 0;
+    while (c[i] != ": ")
+    {
+    c[i];
+    i++;
+    }
+    return (i);
+}
+
+int main(void)
+{
+    int i;
+
+    i = "1000000000000000000000000000000000000: undecillion";
+    ft_col(i);
+    return (0);
+}
